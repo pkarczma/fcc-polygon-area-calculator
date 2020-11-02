@@ -40,6 +40,7 @@ class Rectangle:
         maxh = int(self.height / other.height)
         return maxw * maxh
 
+    # String representation of a rectangle
     def __str__(self):
         return "Rectangle(width=" + str(self.width) + ", height=" + str(self.height) + ")"
 
@@ -62,6 +63,7 @@ class Square(Rectangle):
     def set_height(self, length):
         self.width = length
         self.height = length
-    
+
+    # String representation of a square
     def __str__(self):
         return "Square(side=" + str(self.width) + ")"
