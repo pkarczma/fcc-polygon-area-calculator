@@ -41,13 +41,15 @@ class Rectangle:
         return maxw * maxh
 
     def __str__(self):
-        return "Rectange(width=" + str(self.width) + ", height=" + str(self.height) + ")"
-
-
+        return "Rectangle(width=" + str(self.width) + ", height=" + str(self.height) + ")"
 
 
 class Square(Rectangle):
 
     def __init__(self, length):
+        self.width = length
+        self.height = length
+
+    def set_side(self, length):
         self.width = length
         self.height = length
